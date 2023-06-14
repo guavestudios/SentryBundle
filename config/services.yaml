@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autoconfigure: true
+
+  Guave\SentryBundle\Twig\TwigTemplateExtension:
+    tags:
+      - { name: twig.extension }
+
+  Guave\SentryBundle\Helper\TemplateHelper:
+    public: false
+    tags:
+      - { name: twig.runtime }
