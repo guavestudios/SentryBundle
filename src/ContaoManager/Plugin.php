@@ -13,9 +13,6 @@ use Sentry\SentryBundle\SentryBundle;
 
 class Plugin implements BundlePluginInterface, DependentPluginInterface
 {
-    /**
-     * {@inheritDoc}
-     */
     public function getBundles(ParserInterface $parser): array
     {
         return [
@@ -27,9 +24,6 @@ class Plugin implements BundlePluginInterface, DependentPluginInterface
         ];
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function getPackageDependencies(): array
     {
         return ['sentry/sentry-symfony'];

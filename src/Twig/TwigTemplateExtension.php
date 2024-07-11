@@ -8,11 +8,6 @@ use Twig\TwigFilter;
 
 class TwigTemplateExtension extends AbstractExtension
 {
-    /**
-     * Returns a list of filters to add to the existing list.
-     *
-     * @return TwigFilter[]
-     */
     public function getFilters(): array
     {
         return [
