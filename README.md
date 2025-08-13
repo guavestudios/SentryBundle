@@ -1,3 +1,7 @@
+> ![Deprecated](https://img.shields.io/badge/!-deprecated-red?style=for-the-badge)
+>
+> This Repo is no longer maintained. Please use [oneup/contao-sentry-bundle](https://github.com/1up-lab/contao-sentry-bundle)
+
 # Sentry Bundle
 
 This contao module allow you to integrate Sentry via Twig into your templates with [`sentry/sentry-symfony` bundle][1]

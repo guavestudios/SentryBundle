@@ -3,11 +3,15 @@ services:
     autoconfigure: true
     autowire: true
 
-  Guave\SentryBundle\Twig\TwigTemplateExtension:
+  Guave\SentryBundle\:
+    resource: ../src
+    exclude: ../src/{ContaoManager,DependencyInjection}
+
+  Guave\SentryBundle\Twig\:
+    resource: ../src/Twig
     tags:
       - { name: twig.extension }
 
   Guave\SentryBundle\Helper\TemplateHelper:
-    public: false
     tags:
       - { name: twig.runtime }
